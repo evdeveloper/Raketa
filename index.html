@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top"><a class="logo" href="#">
+              <svg class="svg-sprite-icon  icon-logo logo-icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+              </svg></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">Почему мы?</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Номера</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Как нас найти</a></li>
+              </ul>
+            </nav>
+            <div class="sandwich">
+              <div class="sandwich__line sandwich__line--top"></div>
+              <div class="sandwich__line sandwich__line--middle"></div>
+              <div class="sandwich__line sandwich__line--bottom"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="s-product">
+          <div class="container">
+            <div class="product">
+              <h1>Наши номера</h1>
+              <div class="product__all-filter" id="filterBtn">Все фильтры</div>
+              <div class="product__inner">
+                <aside class="product__filter filter">
+                  <div class="filter__item"> 
+                    <div class="filter__item-title">Цена за сутки, &#8381;</div>
+                    <div class="filter__list">
+                      <div class="filter__input"> <span>от</span>
+                        <input type="text" name="minprice" value="100">
+                      </div>
+                      <div class="filter__input"> <span>до</span>
+                        <input type="text" name="maxprice" value="600">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__item"> 
+                    <div class="filter__item-title">Площадь</div>
+                    <div class="filter__listCheck">
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m1" name="square" value="0,63">
+                        <label for="m1">
+                           0,63 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m2" name="square" value="0,90">
+                        <label for="m2">
+                           0,90 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m3" name="square" value="1,13">
+                        <label for="m3">
+                           1,13 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m4" name="square" value="1,56">
+                        <label for="m4">
+                           1,56 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m5" name="square" value="2,56">
+                        <label for="m5">
+                           2,56 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="m6" name="square" value="2,56">
+                        <label for="m6">
+                           2,56 м2
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__item"> 
+                    <div class="filter__item-title">Оснащение номера</div>
+                    <div class="filter__listCheck">
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="h1" name="hotel" value="Пустой номер">
+                        <label for="h1">
+                           Пустой номер
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="h2" name="hotel" value="Лежак">
+                        <label for="h2">
+                           Лежак
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="h3" name="hotel" value="Когтеточка">
+                        <label for="h3">
+                           Когтеточка
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="h4" name="hotel" value="Игровой-комплекс">
+                        <label for="h4">
+                           Игровой-комплекс
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="filter__checkbox">
+                        <input type="checkbox" id="h5" name="hotel" value="Домик">
+                        <label for="h5">
+                           Домик
+                          <svg class="svg-sprite-icon  icon-check filter__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#check"></use>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn filter-btn">Применить</button>
+                  <button class="btn filter-clear">Сбросить фильтр</button>
+                </aside>
+                <div class="product__cart">
+                  <div class="p-filter">
+                    <svg class="svg-sprite-icon  icon-filter p-filter__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#filter"></use>
+                    </svg>
+                    <div class="p-filter__popup">
+                      <svg class="svg-sprite-icon  icon-up p-filter__up">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#up"></use>
+                      </svg>
+                      <div class="p-filter__item" data-m2="max">По площади
+                        <svg class="svg-sprite-icon  icon-arrowUp p-filter__arrow">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#arrowUp"></use>
+                        </svg>
+                      </div>
+                      <div class="p-filter__item" data-m2="min">По площади
+                        <svg class="svg-sprite-icon  icon-arrowDown p-filter__arrow">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#arrowDown"></use>
+                        </svg>
+                      </div>
+                      <div class="p-filter__item" data-price="max">По цене
+                        <svg class="svg-sprite-icon  icon-arrowUp p-filter__arrow">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#arrowUp"></use>
+                        </svg>
+                      </div>
+                      <div class="p-filter__item" data-price="min">По цене
+                        <svg class="svg-sprite-icon  icon-arrowDown p-filter__arrow">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#arrowDown"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-list">
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/1.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Эконом</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-circle parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#circle"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>100&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/2.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Эконом плюс</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-latok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#latok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-game parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#game"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>200&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/3.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Комфорт</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-latok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#latok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-game parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#game"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-clubok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#clubok"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>250&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/4.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Сьют</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-latok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#latok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-game parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#game"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-clubok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#clubok"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>350&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/5.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Люкс</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-latok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#latok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-game parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#game"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-clubok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#clubok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-home parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#home"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>500&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__top" style="background-image: url('static/images/img/6.jpg')"></div>
+                      <div class="cart-item__body">
+                        <div class="cart-item__name">Супер-Люкс</div>
+                        <div class="parametr">
+                          <div class="parametr__size">Размеры (ШхГхВ) - 90x70x180 cм</div>
+                          <div class="parametr__m2">Площадь - 0,63 м2</div>
+                          <div class="parametr__room">Оснащение номера
+                            <svg class="svg-sprite-icon  icon-latok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#latok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-game parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#game"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-clubok parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#clubok"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-home parametr__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#home"></use>
+                            </svg>
+                          </div>
+                          <div class="parametr__price">
+                             Цена за сутки: <span>600&#8381;</span></div>
+                        </div>
+                        <button class="btn bookup">
+                           Забронировать
+                          <div class="bookup__elem">
+                            <svg class="svg-sprite-icon  icon-lapa bookup__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#lapa"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
