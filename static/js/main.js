@@ -5,13 +5,19 @@ $(document).ready(function () {
     $('#filterBtn').on('click',function(){
         $('.product__filter').fadeToggle();
     });
-    $('.filter-btn').on('click',function(){
-        $('.product__filter').fadeOut();
-    });
 
     $('.filter-clear').click(function() {
         $('input:checked').prop('checked', false);
       });
+
+      $(document).on('click', function (e){ 
+        var div = $('.product__filter');
+        var filter = $('#filterBtn');
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0 && !filter.is(e.target)) { 
+			div.fadeOut(); 
+		}
+	});
     
 }());
 
