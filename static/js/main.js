@@ -17,9 +17,13 @@ $(document).ready(function () {
 		    && div.has(e.target).length === 0 && !filter.is(e.target)) { 
 			div.fadeOut(); 
 		}
-	});
+    });
+    
+    
     
 }());
+
+
 
 
 var clickMenu = $('.sandwich');
